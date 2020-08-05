@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006DD73B24DB4889003C1374 /* RandomPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006DD73A24DB4889003C1374 /* RandomPerson.swift */; };
 		00F944A824DA94C700E363B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F944A724DA94C700E363B4 /* AppDelegate.swift */; };
 		00F944AA24DA94C700E363B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F944A924DA94C700E363B4 /* SceneDelegate.swift */; };
 		00F944AC24DA94C700E363B4 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F944AB24DA94C700E363B4 /* UserProfileVC.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		006DD73A24DB4889003C1374 /* RandomPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPerson.swift; sourceTree = "<group>"; };
 		00F944A424DA94C700E363B4 /* RandomUserGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F944A724DA94C700E363B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00F944A924DA94C700E363B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		00F944BB24DA94EF00E363B4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				006DD73A24DB4889003C1374 /* RandomPerson.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00F944AC24DA94C700E363B4 /* UserProfileVC.swift in Sources */,
+				006DD73B24DB4889003C1374 /* RandomPerson.swift in Sources */,
 				00F944A824DA94C700E363B4 /* AppDelegate.swift in Sources */,
 				00F944AA24DA94C700E363B4 /* SceneDelegate.swift in Sources */,
 			);
