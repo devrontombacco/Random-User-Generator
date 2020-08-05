@@ -174,6 +174,9 @@
                                 <state key="normal" title=" Generate ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="generateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyq-Rd-pQr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVz-3B-Y3U">
                                 <rect key="frame" x="29" y="641" width="63" height="21"/>
@@ -203,6 +206,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dobLabel" destination="g19-Lg-cMM" id="WD0-ob-37Q"/>
+                        <outlet property="emailLabel" destination="T3c-eS-Mis" id="sGI-rt-oaD"/>
+                        <outlet property="genderLabel" destination="okP-Jq-c85" id="MkH-LJ-28S"/>
+                        <outlet property="nameLabel" destination="Qiv-sa-8ue" id="p8Z-gO-Rj4"/>
+                        <outlet property="nationalityLabel" destination="Jid-Zw-8Ds" id="gOr-IB-quN"/>
+                        <outlet property="photoImageView" destination="8by-bP-RxQ" id="ZEb-Sd-xng"/>
+                        <outlet property="professionLabel" destination="SSa-Yt-Vwe" id="Yki-tO-4h6"/>
+                        <outlet property="telephoneNoLabel" destination="7se-RE-7oG" id="jqe-8R-0mV"/>
+                        <outlet property="usernameLabel" destination="ffr-8z-Nw7" id="Sa0-Pw-T3C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
