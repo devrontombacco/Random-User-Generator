@@ -8,48 +8,48 @@
 
 import Foundation
 
-struct RandomPerson {
+struct RandomPerson: Codable {
     let results: [PersonInfo]
 }
 
-struct PersonInfo {
+struct PersonInfo: Codable {
     let gender: String
-    let name: [Name]
-    let location: [Location]
+    let name: Name
+    let location: Location
     let email: String
-    let login: [LoginInfo]
-    let dob:[DateOfBirth]
+    let login: LoginInfo
+    let dob: DateOfBirth
     let phone: String
-    let picture: [PictureString]
+    let picture: PictureString
     let nat: String
     
-    struct Name {
+    struct Name: Codable {
         let title: String
         let first: String
         let last: String
     }
     
-    struct Location {
-        let street: [StreetInfo]
+    struct Location: Codable {
+        let street: StreetInfo
         let city: String
         let state: String
         let country: String
         
-        struct StreetInfo {
+        struct StreetInfo: Codable {
             let number: Int
             let name: String
         }
     }
     
-    struct LoginInfo {
+    struct LoginInfo: Codable {
         let username: String
     }
     
-    struct DateOfBirth {
+    struct DateOfBirth: Codable {
         let date: String
     }
     
-    struct PictureString {
+    struct PictureString: Codable {
         let large: String
         let medium: String
         let thumbnail: String

@@ -40,7 +40,36 @@ class UserProfileVC: UIViewController {
     }
     
     func makeRequest() {
-        // Code for API call
+        
+        let baseUrl = URL(string: "https://randomuser.me/api?results=1")
+        
+        guard let url = baseUrl else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        
+        //ensure data is not nil
+        guard let data = data , error == nil else {
+            print("something went wrong")
+            return
+        }
+        
+//        print(try? JSONSerialization.jsonObject(with: data, options: []))
+            
+        // parse json and convert to object
+        var result: RandomPerson?
+
+        do {
+                result = try JSONDecoder().decode(RandomPerson.self, from: data)
+            } catch {
+                print("Error: \(error)")
+            }
+
+            guard let InfoToDisplay = result else { return }
+
+            print(InfoToDisplay.results[0].gender)
+
+        }
+
+        task.resume()
     }
 }
-
